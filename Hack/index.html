@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Quiz Application</h1>
+    </header>
+    <main>
+        <section class="login-section">
+            <div class="login-container">
+                <h2>Professor Login</h2>
+                <form action="professor_login.php" method="POST">
+                    <label for="professor-username">Username:</label>
+                    <input type="text" id="professor-username" name="username" required>
+                    
+                    <label for="professor-password">Password:</label>
+                    <input type="password" id="professor-password" name="password" required>
+                    
+                    <button type="submit">Login as Professor</button>
+                </form>
+            </div>
+            <div class="login-container">
+                <h2>Student Login</h2>
+                <form action="student_login.php" method="POST">
+                    <label for="student-username">Username:</label>
+                    <input type="text" id="student-username" name="username" required>
+                    
+                    <label for="student-password">Password:</label>
+                    <input type="password" id="student-password" name="password" required>
+                    
+                    <button type="submit">Login as Student</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
